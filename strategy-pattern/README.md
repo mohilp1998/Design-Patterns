@@ -13,7 +13,7 @@ or
 
 `g++ -std=c++11 test.o duck.o flyBehavior.o quackBehavior.o`
 
-and run the generated executable `aout`.
+and run the generated executable `a.out`.
 
 
 [^1]: Image take from "Head First Design Patterns, 2nd Edition by Eric Freeman and Elisabeth Robson"
