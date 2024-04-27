@@ -10,6 +10,7 @@ Strategy Pattern defines a family of algorithms, encapsulates each one, and make
 or
 
 `g++ -c -std=c++11 test.cpp duck.cpp flyBehavior.cpp quackBehavior.cpp`
+
 `g++ -std=c++11 test.o duck.o flyBehavior.o quackBehavior.o`
 
 and run the generated executable `aout`.
