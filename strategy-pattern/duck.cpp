@@ -1,122 +1,82 @@
-#include "flyBehavior.cpp"
-#include "quackBehavior.cpp"
-#include <cstddef>
-#include <iostream>
-#include <memory>
+#include "include/duck.h"
 
-// Base Duck Class
-class Duck
+// Base Duck Class Functions
+void Duck::swim()
 {
-  public:
-    Duck() = default;
-    ~Duck() = default;
+  std::cout << "swimming..";
+}
 
-    FlyBehavior *flyBehavior;
-    QuackBehavior *quackBehavior;
+void Duck::performQuack()
+{
+  quackBehavior->quack();
+}
 
-    virtual void display() = 0;
-    
-    void swim()
-    {
-      std::cout << "swimming..";
-    }
+void Duck::performFly()
+{
+  flyBehavior->fly();
+}
 
-    void performQuack()
-    {
-      quackBehavior->quack();
-    }
+void Duck::setFlyBehavior(FlyBehavior *fb)
+{
+  // Assumed fb dynamically allocated. Deleting old object.
+  delete flyBehavior;
 
-    void performFly()
-    {
-      flyBehavior->fly();
-    }
+  flyBehavior = fb;
+}
 
-    void setFlyBehavior(FlyBehavior *fb)
-    {
-      // Assumed fb dynamically allocated. Deleting old object.
-      delete flyBehavior;
+void Duck::setQuackBehavior(QuackBehavior *qb)
+{
+  // Assumed qb dynamically allocated. Deleting old object.
+  delete quackBehavior;
 
-      flyBehavior = fb;
-    }
-
-    void setQuackBehavior(QuackBehavior *qb)
-    {
-      // Assumed qb dynamically allocated. Deleting old object.
-      delete quackBehavior;
-
-      quackBehavior = qb;
-    }
-};
+  quackBehavior = qb;
+}
 
 
 // Duck Classes implementation
-class MallardDuck: public Duck
+MallardDuck::MallardDuck()
 {
-  public:
-    ~MallardDuck() = default;
+  flyBehavior = new FlyWings;
+  quackBehavior = new Quack;
+}
 
-    MallardDuck()
-    {
-      flyBehavior = new FlyWings;
-      quackBehavior = new Quack;
-    }
-
-    void display()
-    {
-      std::cout << "Mallard Duck\n";
-    }
-};
-
-
-class RedHeadDuck: public Duck
+void MallardDuck::display()
 {
-  public:
-    ~RedHeadDuck() = default;
+  std::cout << "Mallard Duck\n";
+}
 
-    RedHeadDuck()
-    {
-      flyBehavior = new FlyWings;
-      quackBehavior = new Quack;
-    }
-
-    void display()
-    {
-      std::cout << "Red Head Duck\n";
-    }
-};
-
-
-class RubberDuck: public Duck
+//---//
+RedHeadDuck::RedHeadDuck()
 {
-  public:
-    ~RubberDuck() = default;
+  flyBehavior = new FlyWings;
+  quackBehavior = new Quack;
+}
 
-    RubberDuck()
-    {
-      flyBehavior = new FlyNoWings;
-      quackBehavior = new Squeak;
-    }
-
-    void display()
-    {
-      std::cout << "Rubber Duck\n";
-    }
-};
-
-
-class DecoyDuck: public Duck
+void RedHeadDuck::display()
 {
-  public:
-    ~DecoyDuck() = default;
+  std::cout << "Red Head Duck\n";
+}
 
-    DecoyDuck()
-    {
-      flyBehavior = new FlyRocket;
-      quackBehavior = new MuteQuack;
-    }
+//---//
+RubberDuck::RubberDuck()
+{
+  flyBehavior = new FlyNoWings;
+  quackBehavior = new Squeak;
+}
 
-    void display()
-    {
-      std::cout << "Decoy Duck\n";
-    }
-};
+void RubberDuck::display()
+{
+  std::cout << "Rubber Duck\n";
+}
+
+//---//
+DecoyDuck::DecoyDuck()
+{
+  flyBehavior = new FlyRocket;
+  quackBehavior = new MuteQuack;
+}
+
+void DecoyDuck::display()
+{
+  std::cout << "Decoy Duck\n";
+}

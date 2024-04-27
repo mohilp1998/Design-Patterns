@@ -1,47 +1,16 @@
-#include <iostream>
+#include "include/flyBehavior.h"
 
-// abstract class/interface for flyBehavior
-class FlyBehavior
+void FlyNoWings::fly()
 {
-  public:
-    FlyBehavior() = default;
-    virtual ~FlyBehavior() = default;
-    virtual void fly() = 0;
-};
+  std::cout << "NO flying!\n";
+}
 
-// implementations of different flying behaviors
-class FlyNoWings: public FlyBehavior
+void FlyWings::fly()
 {
-  public:
-    FlyNoWings() = default;
-    ~FlyNoWings() = default;
+  std::cout << "Flying with WINGS!\n";
+}
 
-    void fly()
-    {
-      std::cout << "NO flying!\n";
-    }
-};
-
-class FlyWings: public FlyBehavior
+void FlyRocket::fly()
 {
-  public:
-    FlyWings() = default;
-    ~FlyWings() = default;
-
-    void fly()
-    {
-      std::cout << "Flying with WINGS!\n";
-    }
-};
-
-class FlyRocket: public FlyBehavior
-{
-  public:
-    FlyRocket() = default;
-    ~FlyRocket() = default;
-
-    void fly()
-    {
-      std::cout << "Flying insanely fast with ROCKETS!\n";
-    }
-};
+  std::cout << "Flying insanely fast with ROCKETS!\n";
+}

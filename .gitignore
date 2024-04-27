@@ -1,8 +1,5 @@
-# ignore ALL .out files
 *.out
-
-# ignore ALL .log files
+*.o
 *.log
-
-# ignore ALL files in ANY directory named temp
+.vscode
 temp/

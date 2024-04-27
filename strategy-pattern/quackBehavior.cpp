@@ -1,48 +1,16 @@
-#include <iostream>
+#include "include/quackBehavior.h"
 
-//abstract class for quacking behavior
-class QuackBehavior
+void Quack::quack()
 {
-  public:
-    QuackBehavior() = default;
-    virtual ~QuackBehavior() = default;
+  std::cout << "QUACK QUACK\n";
+}
 
-    virtual void quack() = 0;
-};
-
-//implementation for quacking behavior
-class Quack: public QuackBehavior
+void Squeak::quack()
 {
-  public:
-    Quack() = default;
-    ~Quack() = default;
+  std::cout << "SQUEAK SQUEAK\n";
+}
 
-    void quack()
-    {
-      std::cout << "QUACK QUACK\n";
-    }
-};
-
-class Squeak: public QuackBehavior
+void MuteQuack::quack()
 {
-  public:
-    Squeak() = default;
-    ~Squeak() = default;
-
-    void quack()
-    {
-      std::cout << "SQUEAK SQUEAK\n";
-    }
-};
-
-class MuteQuack: public QuackBehavior
-{
-  public:
-    MuteQuack() = default;
-    ~MuteQuack() = default;
-
-    void quack()
-    {
-      std::cout << "------\n";
-    }
-};
+  std::cout << "------\n";
+}
