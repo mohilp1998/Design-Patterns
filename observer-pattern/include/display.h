@@ -1,5 +1,6 @@
 #pragma once
 #include "weatherdata.h"
+#include <bits/stdc++.h> 
 // Display Interface
 class Display
 {

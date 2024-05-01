@@ -1,5 +1,7 @@
 #pragma once
 #include <vector>
+#include <iostream>
+
 // Observer Interface
 class Observer
 {
@@ -30,7 +32,7 @@ class Subject
 class WeatherData: public Subject
 {
   public:
-    std::vector<Observer> obs;
+    std::vector<Observer *> obs;
     float temp;
     float humditiy;
     float pressure;
@@ -38,8 +40,8 @@ class WeatherData: public Subject
     WeatherData() = default;
     ~WeatherData() = default;
 
-    void registerObserver(Observer o);
-    void removeObserver(Observer o);
+    void registerObserver(Observer *o);
+    void removeObserver(Observer *o);
     void notifyObserver();
 
 

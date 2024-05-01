@@ -20,6 +20,8 @@ void CurrentConditionsDisplay::update()
   temp = weatherData->getTemp();
   humditiy = weatherData->getHumidity();
   pressure = weatherData->getPressure();
+
+  display();
 }
 
 void CurrentConditionsDisplay::display()
@@ -50,6 +52,8 @@ void StatisticsDisplay::update()
   avgHumidity = ((avgHumidity*count) + weatherData->getHumidity()) / (count + 1);
   avgPressure = ((avgPressure*count) + weatherData->getPressure()) / (count + 1);
   count++;
+
+  display();
 }
 
 void StatisticsDisplay::display()
@@ -72,6 +76,7 @@ ForecastDisplay::~ForecastDisplay()
 
 void ForecastDisplay::update()
 {
+  display();
   return;
 }
 
