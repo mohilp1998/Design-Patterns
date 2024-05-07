@@ -8,13 +8,13 @@ The UML Diagram of Decorator Pattern looks like following:
 ![Starbuzz App](/decorator-pattern/starbuzz.png)[^1]
 
 # Compile the code using following ways
-<!-- `g++ -std=c++11 -Wall test.cpp display.cpp weatherdata.cpp` -->
+`g++ -std=c++11 -Wall test.cpp beverage.cpp decorator.cpp`
 
 or
 
-<!-- `g++ -c -std=c++11 -Wall test.cpp display.cpp weatherdata.cpp` -->
+`g++ -c -std=c++11 -Wall test.cpp beverage.cpp decorator.cpp`
 
-<!-- `g++ -std=c++11 -Wall test.o display.o weatherdata.o` -->
+`g++ -std=c++11 -Wall test.cpp beverage.cpp decorator.cpp`
 
 and run the generated executable `a.out`.
 
