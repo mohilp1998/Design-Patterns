@@ -8,13 +8,13 @@ The UML Diagram of Observer Pattern looks like following:
 ![Weather-O-Rama App](/observer-pattern/weatherorama.png)[^1]
 
 # Compile the code using following ways
-`g++ -std=c++11 test.cpp display.cpp weatherdata.cpp`
+`g++ -std=c++11 -Wall test.cpp display.cpp weatherdata.cpp`
 
 or
 
-`g++ -c -std=c++11 test.cpp display.cpp weatherdata.cpp`
+`g++ -c -Wall -std=c++11 test.cpp display.cpp weatherdata.cpp`
 
-`g++ -std=c++11 test.o display.o weatherdata.o`
+`g++ -std=c++11 -Wall test.o display.o weatherdata.o`
 
 and run the generated executable `a.out`.
 

@@ -5,13 +5,13 @@ Strategy Pattern defines a family of algorithms, encapsulates each one, and make
 ![DuckUSim UML Diagram for Design Pattern](/strategy-pattern/duckusim.png)[^1]
 
 # Compile the code using following ways
-`g++ -std=c++11 test.cpp duck.cpp flyBehavior.cpp quackBehavior.cpp`
+`g++ -std=c++11 -Wall test.cpp duck.cpp flyBehavior.cpp quackBehavior.cpp`
 
 or
 
-`g++ -c -std=c++11 test.cpp duck.cpp flyBehavior.cpp quackBehavior.cpp`
+`g++ -c -std=c++11 -Wall test.cpp duck.cpp flyBehavior.cpp quackBehavior.cpp`
 
-`g++ -std=c++11 test.o duck.o flyBehavior.o quackBehavior.o`
+`g++ -std=c++11 -Wall test.o duck.o flyBehavior.o quackBehavior.o`
 
 and run the generated executable `a.out`.
 
