@@ -5,16 +5,16 @@ UML Diagram for the factory pattern:
 ![Factory Pattern UML Diagram](/factory-pattern/factory/factorypattern.png)[^1]
 
 # Diagram on e.g. coded here
-![Pizza Store in Factory Patter](/factory-pattern/factory/pizzastore.png)[^1]
+![Pizza Store in Factory Pattern](/factory-pattern/factory/pizzastore.png)[^1]
 
 # Compile the code using following ways
-<!-- `g++ -std=c++11 -Wall test.cpp duck.cpp flyBehavior.cpp quackBehavior.cpp` -->
+`g++ -Wall -std=c++11 test.cpp pizzaStore.cpp pizza.cpp`
 
 or
 
-<!-- `g++ -c -std=c++11 -Wall test.cpp duck.cpp flyBehavior.cpp quackBehavior.cpp` -->
+`g++ -c -std=c++11 -Wall test.cpp pizzaStore.cpp pizza.cpp`
 
-<!-- `g++ -std=c++11 -Wall test.o duck.o flyBehavior.o quackBehavior.o` -->
+`g++ -std=c++11 -Wall test.o pizzaStore.o pizza.o`
 
 and run the generated executable `a.out`.
 
