@@ -3,7 +3,7 @@
 
 void Pizza::prepare()
 {
-  std::cout << "\tPreparing the Pizza " << pizzaName << "\n";
+  std::cout << "Preparing the Pizza " << pizzaName << "\n";
 }
 
 void Pizza::bake()
@@ -18,7 +18,7 @@ void Pizza::cut()
 
 void Pizza::box()
 {
-  std::cout << "\tPlace Pizza in pizza store box\n";
+  std::cout << "\tPlace Pizza in pizza store box\n\n";
 }
 
 std::string Pizza::getName()
