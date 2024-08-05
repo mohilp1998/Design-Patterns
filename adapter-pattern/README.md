@@ -21,11 +21,11 @@ Both of them are adapting a turkey to be used as duck class. The class diagram i
 # Compile the code using following ways
 To compile composition example:
 
-`g++ -std=c++11 -Wall adpatercompose.cpp xyz.cpp abc.cpp`
+`g++ -std=c++11 -Wall duck.cpp turkey.cpp adptcompose.cpp`
 
 To compile inheritance example:
 
-`g++ -std=c++11 -Wall adpaterinherit.cpp xyz.cpp abc.cpp`
+`g++ -std=c++11 -Wall duck.cpp turkey.cpp adptinherit.cpp`
 
 and run the generated executable `a.out`.
 

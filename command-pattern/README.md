@@ -8,13 +8,13 @@ The UML Diagram of Command Pattern looks like following:
 ![Remote Controller](/command-pattern/remotecontroller.jpeg)[^1]
 
 # Compile the code using following ways
-`g++ -std=c++11 -Wall remotetest.cpp xyz.cpp abc.cpp`
+`g++ -std=c++11 -Wall components.cpp commands.cpp remotecontroller.cpp`
 
 or
 
-`g++ -c -Wall -std=c++11 remotetest.cpp xyz.cpp abc.cpp`
+`g++ -c -Wall -std=c++11 components.cpp commands.cpp remotecontroller.cpp`
 
-`g++ -std=c++11 -Wall remotetest.o xyz.o abc.o`
+`g++ -std=c++11 -Wall components.o commands.o remotecontroller.o`
 
 and run the generated executable `a.out`.
 
