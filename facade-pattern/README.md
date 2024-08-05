@@ -8,13 +8,13 @@ The UML Diagram of Facade Pattern looks like following:
 ![Home Theater](/facade-pattern/hometheater.jpeg)[^1]
 
 # Compile the code using following ways
-`g++ -std=c++11 -Wall theatertest.cpp xyz.cpp abc.cpp`
+`g++ -std=c++11 -Wall components.cpp theater.cpp`
 
 or
 
-`g++ -c -Wall -std=c++11 theatertest.cpp xyz.cpp abc.cpp`
+`g++ -c -Wall -std=c++11 components.cpp theater.cpp`
 
-`g++ -std=c++11 -Wall theatertest.o xyz.o abc.o`
+`g++ -std=c++11 -Wall components.o theater.o`
 
 and run the generated executable `a.out`.
 
