@@ -8,13 +8,13 @@ The UML Diagram of Template Method Pattern looks like following:
 ![Beverage Maker](/template-method-pattern/tea-coffee.jpeg)[^1]
 
 # Compile the code using following ways
-`g++ -std=c++11 -Wall makebeverages.cpp xyz.cpp abc.cpp`
+`g++ -std=c++11 -Wall beverage.cpp`
 
 or
 
-`g++ -c -Wall -std=c++11 makebeverages.cpp xyz.cpp abc.cpp`
+`g++ -c -Wall -std=c++11 beverage.cpp`
 
-`g++ -std=c++11 -Wall makebeverages.o xyz.o abc.o`
+`g++ -std=c++11 -Wall beverage.o`
 
 and run the generated executable `a.out`.
 
