@@ -8,13 +8,13 @@ The UML Diagram of Iterator Pattern looks like following:
 ![Menu Pattern](/iterator-pattern/iterator.png)[^1]
 
 # Compile the code using following ways
-`g++ -std=c++11 -Wall menu.cpp`
+`g++ -Wall -std=c++11 iterator.cpp menu.cpp waitress.cpp`
 
 or
 
-`g++ -c -Wall -std=c++11 menu.cpp`
+`g++ -c -Wall -std=c++11 iterator.cpp menu.cpp waitress.cpp`
 
-`g++ -std=c++11 -Wall menu.o`
+`g++ -std=c++11 -Wall iterator.o menu.o waitress.o`
 
 and run the generated executable `a.out`.
 
