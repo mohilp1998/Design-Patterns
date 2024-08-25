@@ -8,13 +8,13 @@ The UML Diagram of Composite Pattern looks like following:
 ![Composite Pattern](/composite-pattern/composite.png)[^1]
 
 # Compile the code using following ways
-`g++ -std=c++11 -Wall menu.cpp`
+`g++ -std=c++11 -Wall menuComponent.cpp waitress.cpp`
 
 or
 
-`g++ -c -Wall -std=c++11 menu.cpp`
+`g++ -c -Wall -std=c++11 menuComponent.cpp waitress.cpp`
 
-`g++ -std=c++11 -Wall menu.o`
+`g++ -std=c++11 -Wall menuComponent.o waitress.o`
 
 and run the generated executable `a.out`.
 
