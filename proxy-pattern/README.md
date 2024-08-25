@@ -8,13 +8,13 @@ The UML Diagram of Proxy Pattern looks like following:
 ![Caching DB](/proxy-pattern/proxy.png)[^1]
 
 # Compile the code using following ways
-`g++ -std=c++11 -Wall cache.cpp`
+`g++ -std=c++11 -Wall db.cpp dbproxy.cpp application.cpp`
 
 or
 
-`g++ -c -Wall -std=c++11 cache.cpp`
+`g++ -c -Wall -std=c++11 db.cpp dbproxy.cpp application.cpp`
 
-`g++ -std=c++11 -Wall cache.o`
+`g++ -std=c++11 -Wall db.o dbproxy.o application.o`
 
 and run the generated executable `a.out`.
 
