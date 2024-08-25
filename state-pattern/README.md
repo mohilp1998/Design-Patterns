@@ -8,13 +8,13 @@ The UML Diagram of State Pattern looks like following:
 ![Gumball Pattern](/state-pattern/state.png)[^1]
 
 # Compile the code using following ways
-`g++ -std=c++11 -Wall gumball.cpp`
+`g++ -std=c++11 -Wall state.cpp gumball.cpp`
 
 or
 
-`g++ -c -Wall -std=c++11 gumball.cpp`
+`g++ -c -Wall -std=c++11 state.cpp gumball.cpp`
 
-`g++ -std=c++11 -Wall gumball.o`
+`g++ -std=c++11 -Wall state.o gumball.o`
 
 and run the generated executable `a.out`.
 
